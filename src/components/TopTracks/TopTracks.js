@@ -20,16 +20,19 @@ export const TopTracks = () => {
       >
         Show top tracks
       </button>
-      <ul>
-        {
-          top.map(track => (
-            <tr key={track.url}>
-              <td>{track.name}</td>
-              <td>{track.artist.name}</td>
-            </tr>
-          ))
-        }
-      </ul>
+      <table>
+        <tbody>
+          {
+            top.map((track, i) => (
+              <tr key={track.url}>
+                <td>{`${i + 1})`}</td>
+                <td>{track.name}</td>
+                <td>{track.artist.name}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
     </>
   );
 };
