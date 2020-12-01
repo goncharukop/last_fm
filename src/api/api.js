@@ -1,4 +1,4 @@
-const BASE_URL = 'http://ws.audioscrobbler.com/2.0/?method=';
+const BASE_URL = 'https://ws.audioscrobbler.com/2.0/?method=';
 const key = '269e56f769966f443e473d44204a9c98';
 
 export async function request(url, options) {
